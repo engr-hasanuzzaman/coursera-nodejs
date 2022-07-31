@@ -6,6 +6,7 @@ const fs = require('fs');
 const path = require('path');
 const morgan = require('morgan');
 const dishRouter = require('./routes/dishRouter');
+const promotionRouter = require('./routes/promotionRouter');
 
 /*---------------
 * constant
@@ -25,6 +26,7 @@ app.use(morgan('dev'));
 * routes
 * ---------------*/
 app.use('/dishes', dishRouter);
+app.use('/promotions', promotionRouter);
 
 /*---------------
 * others
