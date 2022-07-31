@@ -7,6 +7,7 @@ const path = require('path');
 const morgan = require('morgan');
 const dishRouter = require('./routes/dishRouter');
 const promotionRouter = require('./routes/promotionRouter');
+const leaderRouter = require('./routes/leaderRouter');
 
 /*---------------
 * constant
@@ -27,6 +28,7 @@ app.use(morgan('dev'));
 * ---------------*/
 app.use('/dishes', dishRouter);
 app.use('/promotions', promotionRouter);
+app.use('/leaders', leaderRouter);
 
 /*---------------
 * others
